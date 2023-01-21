@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .container{
+        background-color: #6f42c1;
+        width:50%;
+        height:200px;
+    }
+    .b1{
+        background-color: aliceblue;
+    }
+    .b2{
+        background-color: aliceblue;
+    }
+</style>
+<body class="container">
+<div align="center">
+    <img src="{% static 'images/donimage.jpg' %}">
+    <h1>movies information</h1>
+    <button class="b1"><a href="/list">addmovies</button>
+    <button class="b2"><a href="/form">addforms</button>
+</div>
+
+</body>
+</html>

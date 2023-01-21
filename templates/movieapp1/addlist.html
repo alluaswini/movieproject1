@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .container{
+        background-color: #8fd19e;
+        width:70%;
+        heigth:200px;
+    }
+    d1{
+        width:100;
+        heigth:100px;
+    }
+
+</style>
+<body class="container">
+<table border="1" style="width:50%">
+    <tr>
+    <th>title</th>
+    <th>rating</th>
+    <th>year_release</th>
+    <th>desc</th>
+    <th>images</th></tr>
+     {%for e in movie%}
+    <tr>
+    <td>{{e.title}}</td>
+    <td>{{e.rating}}</td>
+    <td>{{e.year_released}}</td>
+    <td>{{e.desc}}</td>
+    <td class="d1"><img src="images/{{e.image}}"></td></tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
